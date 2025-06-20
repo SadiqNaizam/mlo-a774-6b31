@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoLockup from '@/components/LogoLockup'; // Assuming LogoLockup is in src/components/
+import { ThemeToggleButton } from '@/components/ThemeToggleButton';
 
 const HeaderAuth: React.FC = () => {
   console.log('HeaderAuth loaded');
@@ -11,7 +12,7 @@ const HeaderAuth: React.FC = () => {
         <Link to="/" aria-label="Go to homepage">
           <LogoLockup />
         </Link>
-        {/* No navigation links as per description for auth-specific header */}
+        <ThemeToggleButton />
       </div>
     </header>
   );
